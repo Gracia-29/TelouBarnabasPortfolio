@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barnabas Komi TELOU — Graphiste</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--blue:#003DA5;--navy:#00277A;--orange:#FF7A00;--paper:#fff;--ink:#0B1E4D;--soft:#EEF3FC;--line:#D3DEF3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0A1533;--ink:#EAF0FF;--soft:#0F1D45;--line:#22346B}}
+:root[data-theme="dark"]{--paper:#0A1533;--ink:#EAF0FF;--soft:#0F1D45;--line:#22346B}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Unbounded,"DM Sans",sans-serif;margin:0;line-height:1.05}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--blue);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:800 15px Unbounded,sans-serif;text-decoration:none}
+.logo b{color:var(--orange)}
+nav{display:flex;gap:22px;font-size:15px;overflow-x:auto}
+nav a{text-decoration:none;white-space:nowrap;opacity:.9}
+nav a:hover{color:var(--orange)}
+nav .cta{background:var(--orange);color:#fff;padding:6px 16px;border-radius:99px;font-weight:700;opacity:1}
+/* hero */
+.hero{position:relative;isolation:isolate;height:calc(100svh - 60px);min-height:640px;max-height:900px;padding:0;background:var(--blue) url("assets/COVER PORTFOLIO (1).jpg") center/cover no-repeat;color:#fff;overflow:hidden}
+.hero .wrap{position:relative;z-index:1;width:100%;max-width:none;height:100%;padding:0}
+.btns{position:absolute;z-index:5;left:50%;bottom:22px;display:flex;gap:12px;flex-wrap:wrap;margin:0;transform:translateX(-50%)}
+.btn{display:inline-block;padding:13px 24px;border-radius:10px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--orange);color:#fff}
+.btn.s{border:2px solid #fff;color:#fff}
+/* sections */
+section{padding:88px 0}
+section.alt{background:var(--soft)}
+h2{font-size:clamp(28px,4.6vw,46px);margin-bottom:12px}
+h2 em{font-style:normal;color:var(--orange)}
+.lead{max-width:60ch;margin:0 0 40px;opacity:.85}
+.about{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:start}
+.about .box{background:var(--blue);color:#fff;border-radius:24px;padding:36px}
+.about .box p{margin:0 0 14px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{border-left:4px solid var(--orange);padding:4px 0 4px 14px}
+.grid{display:grid;gap:20px}
+.g5{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px}
+.card h3{font-size:16px;margin-bottom:10px;color:var(--blue)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card h3{color:var(--orange)}}
+.card p{margin:0;font-size:15px}
+.svc{border-top:6px solid var(--orange);border-radius:6px 6px 16px 16px}
+/* projets */
+.proj{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.pc{border-radius:20px;overflow:hidden;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column}
+.project-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;background:var(--soft);padding:8px}
+.project-images.featured{grid-template-columns:1fr}
+.project-images img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:var(--paper)}
+.pc div.t{padding:22px}
+.pc h3{font-size:18px;margin-bottom:6px}
+.pc .m{font-size:13px;color:var(--orange);font-weight:700;margin-bottom:8px}
+.pc p{margin:0;font-size:15px}
+.project-more{padding:0 22px 22px}
+.project-more summary{color:var(--blue);cursor:pointer;font-size:14px;font-weight:700;list-style:none}
+.project-more summary::-webkit-details-marker{display:none}
+.project-more summary::after{content:" +";color:var(--orange)}
+.project-more[open] summary::after{content:" -"}
+.project-more .project-images{margin-top:12px;border-radius:12px}
+/* contact */
+.contact{background:var(--blue);color:#fff}
+.contact .row{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.contact p{max-width:52ch}
+.links{display:grid;gap:12px}
+.links a{display:flex;gap:14px;align-items:center;background:var(--navy);padding:16px 20px;border-radius:14px;text-decoration:none}
+.links i{font-style:normal;background:var(--orange);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:700}
+footer{background:var(--navy);color:#fff;text-align:center;padding:20px;font-size:14px}
+@media (max-width:760px){
+ nav a:not(.cta){display:none}
+ .hero{height:auto;min-height:0;max-height:none;aspect-ratio:1080/768;background-size:100% 100%}
+ .btns{left:50%;bottom:4%;justify-content:center;flex-wrap:nowrap;gap:8px;padding:0 10px}
+ .btn{padding:12px 14px;font-size:13px;white-space:nowrap}
+ .about,.contact .row{grid-template-columns:1fr}
+ .proj,.project-more .project-images{grid-template-columns:1fr}
+ section{padding:64px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <a class="logo" href="#top">TALLB<b>DESIGN</b></a>
+ <nav aria-label="Navigation principale">
+  <a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#services">Services</a><a href="#projets">Projets</a><a class="cta" href="#contact">Me contacter</a>
+ </nav>
+</div></header>
+
+<main id="top">
+<section class="hero" aria-label="Accueil du portfolio"><div class="wrap">
+ <div class="btns"><a class="btn p" href="#contact">Me contacter</a><a class="btn s" href="#projets">Voir mes projets</a></div>
+</div></section>
+
+<section id="apropos"><div class="wrap about">
+ <div>
+  <h2>À propos de <em>moi</em></h2>
+  <ul class="facts">
+   <li>Je m'appelle Barnabas Komi TELOU,je suis un designer graphique spécialisé dans la conception des affiches percutantes, des logos sur mésures et des identités visuelles clairs, cohérents et fonctionnels.</li>
+   <li>Bac F3, puis cap sur le design graphique</li>
+   <li>Curieux, rigoureux et persévérant</li>
+   <li>Objectif : une formation d’excellence en design</li>
+  </ul>
+ </div>
+ <div class="box">
+  <p>Pour moi, le design ne doit pas seulement être esthétique : il doit être clair, cohérent et fonctionnel.</p>
+  <p>Chaque projet est un défi technique et une occasion d’apprendre. Mon cursus technique m’aide à aborder la création avec une attention particulière.</p>
+  <p>Mon ambition : faire du design un métier professionnel, notamment dans le secteur automobile.</p>
+ </div>
+</div></section>
+
+<section id="competences" class="alt"><div class="wrap">
+ <h2>Mes <em>compétences</em></h2>
+ <p class="lead">Cinq qualités qui guident mon travail de projet en projet.</p>
+ <div class="grid g5">
+  <div class="card"><h3>Sens de l’organisation</h3><p>Planifier, gérer les priorités et respecter les délais tout en livrant un rendu propre.</p></div>
+  <div class="card"><h3>Esprit de curiosité</h3><p>Une soif d’apprendre qui m’aide à acquérir de nouvelles compétences.</p></div>
+  <div class="card"><h3>Travail d’équipe</h3><p>Collaborer avec des profils variés, dans l’écoute, l’humilité et la coopération.</p></div>
+  <div class="card"><h3>Adaptabilité</h3><p>M’adapter aux environnements, méthodes et contraintes, en restant ouvert à l’apprentissage.</p></div>
+  <div class="card"><h3>Esprit de créativité</h3><p>Imaginer des concepts originaux grâce à la recherche, l’observation et l’expérimentation.</p></div>
+ </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+ <h2>Mes offres de <em>services</em></h2>
+ <p class="lead">Des créations adaptées aux réseaux sociaux comme à l’impression.</p>
+ <div class="grid g3">
+  <div class="card svc"><h3>Poster design</h3><p>Des affiches modernes, professionnelles et minimalistes, conçues selon les normes et les besoins du client.</p></div>
+  <div class="card svc"><h3>Logo design</h3><p>Des logos simples, mémorables et adaptés à chaque domaine d’activité, grâce à la psychologie des formes et des couleurs.</p></div>
+  <div class="card svc"><h3>Brand design</h3><p>Du logo aux palettes et systèmes typographiques : une identité visuelle forte et facile à reconnaître.</p></div>
+ </div>
+</div></section>
+
+<section id="projets" class="alt"><div class="wrap">
+ <h2>Projets <em>réalisés</em></h2>
+ <p class="lead">Six projets menés en 2026 pour des entreprises, des églises et des particuliers.</p>
+ <div class="proj">
+  <article class="pc"><div class="project-images featured">
+    <img src="assets/une1.png" alt="Affiche de la semaine Willnet@Center" loading="lazy" decoding="async"></div>
+    <div class="t"><div class="m">2026</div>
+    <h3>Willnet@Center</h3><p>Communication visuelle d’un centre informatique : affiches de nouveau mois, de nouvelle semaine, prospectus et visuel du 4e anniversaire.</p></div>
+    <details class="project-more">
+        <summary>Voir plus (8 autres réalisations)</summary>
+        <div class="project-images"><img src="assets/une2.png" alt="Visuel du quatrième anniversaire de Willnet@Center" loading="lazy" decoding="async">
+            <img src="assets/Capture d'écran 2026-11-06 151815.png" alt="Affiche de bienvenue pour le mois d’octobre" loading="lazy" decoding="async">
+            <img src="assets/Capture d'écran 2026-11-06 151839.png" alt="Affiche de la semaine Willnet@Center" loading="lazy" decoding="async">
+            <img src="assets/Capture d'écran 2026-11-06 151913.png" alt="Affiche de bienvenue pour le mois de septembre" loading="lazy" decoding="async">
+            <img src="assets/Capture d'écran 2026-11-06 151937.png" alt="Affiche de la semaine avec une citation sur la détermination" loading="lazy" decoding="async">
+            <img src="assets/Capture d'écran 2026-11-06 152008.png" alt="Affiche de la semaine avec un message de motivation" loading="lazy" decoding="async">
+            <img src="assets/Capture d'écran 2026-11-06 152059.png" alt="Prospectus des services Willnet@Center pour son anniversaire" loading="lazy" decoding="async">
+            <img src="assets/Capture d'écran 2026-11-06 152125.png" alt="Présentation des services et des coordonnées de Willnet@Center" loading="lazy" decoding="async"></div>
+        </details>
+    </article>
+  <article class="pc"><div class="project-images featured"><img src="assets/church1.png" alt="Affiche d’un programme de l’église" loading="lazy" decoding="async"></div><div class="t"><div class="m">2026</div><h3>Communication d’églises</h3><p>Affiches et flyers pour des programmes, séminaires et cultes dominicaux de deux églises de ma communauté.</p></div><details class="project-more"><summary>Voir plus (7 autres réalisations)</summary><div class="project-images"><img src="assets/Capture d'écran 2026-11-06 152217.png" alt="Affiche de conférence de la Mission des Ambassadeurs du Christ" loading="lazy" decoding="async"><img src="assets/Capture d'écran 2026-11-06 152301.png" alt="Affiche du culte dominical sur les mystères de la libation" loading="lazy" decoding="async"><img src="assets/Capture d'écran 2026-11-06 152323.png" alt="Affiche d’un culte dominical sur la prière avec de l’eau" loading="lazy" decoding="async"><img src="assets/Capture d'écran 2026-11-06 152339.png" alt="Visuel de titre pour un culte dominical" loading="lazy" decoding="async"><img src="assets/Capture d'écran 2026-11-06 152417.png" alt="Affiche de culte de l’Ambassade du Saint-Esprit" loading="lazy" decoding="async"><img src="assets/Capture d'écran 2026-11-06 152443.png" alt="Affiche pour huit jours de mise à jour spirituelle" loading="lazy" decoding="async"><img src="assets/Capture d'écran 2026-11-06 152532.png" alt="Affiche sur la justice divine et les miracles" loading="lazy" decoding="async"></div></details></article>
+  <article class="pc">
+    <div class="project-images featured">
+        <img src="assets/elka1.png" alt="Visuel promotionnel Elka yaourt et glace" loading="lazy" decoding="async"></div>
+        <div class="t"><div class="m">2026</div>
+        <h3>Elka, pâtisserie et glaces</h3>
+        <p>Étiquettes pour pots de yaourts et crèmes, affiche publicitaire et bannières pour la devanture.</p>
+    </div>
+        <details class="project-more">
+            <summary>Voir plus (6 autres réalisations)</summary>
+            <div class="project-images">
+                <img src="assets/elka2.png" alt="Affiche publicitaire Elka pâtisserie et glaces" loading="lazy" decoding="async">
+                <img src="assets/elka3.png" alt="Présentation des produits et services Elka" loading="lazy" decoding="async">
+                <img src="assets/Capture d'écran 2026-11-06 152636.png" alt="Autre visuel de la marque Elka" loading="lazy" decoding="async">
+                <img src="assets/Capture d'écran 2026-11-06 152709.png" alt="Bannière de marque Elka Yaourt et Glace" loading="lazy" decoding="async">
+                <img src="assets/Capture d'écran 2026-11-06 152743.png" alt="Visuel d’un pot de glace Elka" loading="lazy" decoding="async">
+            </div>
+        </details>
+    </article>
+  <article class="pc"><div class="project-images featured"><img src="assets/glorino1.png" alt="Refonte du logo et identité visuelle de Glorino Service" loading="lazy" decoding="async"></div><div class="t"><div class="m">2026</div><h3>Glorino Service</h3><p>Redesign du logo, palette, typographie, packagings, tabliers et nouveau design des attestations de formation.</p></div><details class="project-more"><summary>Voir plus (3 autres réalisations)</summary><div class="project-images"><img src="assets/glorino2.png" alt="Design des emballages Glorino Service" loading="lazy" decoding="async"><img src="assets/glorino3.png" alt="Applications de l’identité Glorino sur les uniformes" loading="lazy" decoding="async"><img src="assets/glorino4.png" alt="Attestations de formation Glorino Service" loading="lazy" decoding="async"></div></details></article>
+  <article class="pc"><div class="project-images featured"><img src="assets/Capture d'écran 2026-11-06 152937.png" alt="Affiche des cinq ans de Joseph et Joséphine" loading="lazy" decoding="async"></div><div class="t"><div class="m">2026</div><h3>Affiches d’anniversaire</h3><p>Affiches personnalisées pour célébrer des anniversaires en famille.</p></div><details class="project-more"><summary>Voir plus (1 autre réalisation)</summary><div class="project-images"><img src="assets/Capture d'écran 2026-11-06 153003.png" alt="Affiche d’anniversaire de Françoise" loading="lazy" decoding="async"></div></details></article>
+  <article class="pc"><div class="project-images featured"><img src="assets/tableau1.png" alt="Tableau photo décoratif exposé dans un salon" loading="lazy" decoding="async"></div><div class="t"><div class="m">2026</div><h3>Tableaux photo décoratifs</h3><p>Un petit business lancé en mars : tableaux pour anniversaires, portraits professionnels et décoration, réalisés pour mes voisins, amis et clients.</p></div><details class="project-more"><summary>Voir plus (1 autre réalisation)</summary><div class="project-images"><img src="assets/photo1.png" alt="Exemple de portrait réalisé pour un tableau photo" loading="lazy" decoding="async"></div></details></article>
+ </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap row">
+ <div>
+  <h2>Travaillons <em>ensemble</em></h2>
+  <p>Ce portfolio est une étape dans la construction de mon identité créative. Un projet d’affiche, de logo ou d’identité visuelle ? Écrivez-moi.</p>
+ </div>
+ <div class="links">
+  <a href="tel:+22871048684"><i>T</i>+228 7104 8684</a>
+  <a href="https://instagram.com/tallbdesign"><i>@</i>@tall_design</a>
+  <a href="mailto:barnabastelou11@gmail.com"><i>M</i>barnabastelou11@gmail.com</a>
+ </div>
+</div></section>
+</main>
+<footer>© 2026 Barnabas Komi TELOU · Merci pour l’attention accordée à mon portfolio</footer>
+</body>
+</html>
